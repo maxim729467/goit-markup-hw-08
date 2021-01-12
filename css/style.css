@@ -326,26 +326,27 @@ h1 {
 
 .description-img {
   position: relative;
-  display: block;
 }
 
 .clarification {
-  display: block;
   position: absolute;
+  text-align: center;
   width: 100%;
   bottom: 0px;
-  padding: 27px 5px;
-  margin: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.clarification-item {
+  padding: 27px 0px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
 
-  background-color: rgba(47, 48, 58, 0.8);
+  text-transform: uppercase;
 }
 
 .heading {
@@ -369,6 +370,8 @@ h1 {
   letter-spacing: 0.03em;
 }
 
+/* Наша команда */
+
 .reps {
   font-size: 16px;
   font-weight: 500;
@@ -379,9 +382,7 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* Наша команда */
-
-.primary-section div {
+.primary-section > div {
   padding-top: 0px;
   padding-bottom: 94px;
 }
@@ -420,6 +421,10 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icons-list + .icons-list {
+  margin-left: 10px;
 }
 
 .reps-contacts {
