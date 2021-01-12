@@ -866,15 +866,22 @@ footer address {
 }
 
 .check-label {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 
 .policy-box {
-  appearance: none;
+  /* appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
+  -moz-appearance: none; */
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .checkmark {
