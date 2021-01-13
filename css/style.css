@@ -329,17 +329,20 @@ h1 {
 }
 
 .clarification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  text-align: center;
-  width: 100%;
   bottom: 0px;
+  left: 0px;
+
+  width: 100%;
+  min-height: 70px;
 
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .clarification-item {
-  padding: 27px 0px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -538,6 +541,7 @@ h1 {
 
 .footer .container {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -560,6 +564,7 @@ h1 {
 }
 
 .footer-left {
+  width: 100%;
   margin-right: 70px;
 }
 
@@ -609,10 +614,10 @@ footer address {
 }
 
 .social-media {
-  width: 206px;
+  /* width: 206px; */
   display: flex;
   flex-wrap: wrap;
-  margin-right: 93px;
+  margin-right: 90px;
 }
 
 .social-icons {
@@ -658,6 +663,10 @@ footer address {
 .subscription {
   display: flex;
   flex-direction: column;
+}
+
+.footer-form {
+  display: flex;
 }
 
 .footer-form input {
