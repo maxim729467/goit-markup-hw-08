@@ -899,7 +899,7 @@ footer address {
 
 .checkmark::before {
   content: '';
-  display: inline-flex;
+  display: block;
   width: 16px;
   height: 15px;
   margin-right: 9px;
