@@ -897,21 +897,23 @@ footer address {
   margin: -1px;
 }
 
-.checkmark {
-  display: inline-block;
+.checkmark::before {
+  content: '';
+  display: inline-flex;
   width: 16px;
   height: 15px;
   margin-right: 9px;
-  background: url(../images/icon-unchecked.svg);
-  background-origin: content-box;
-  background-size: contain;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--general-background-color);
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
 }
 
-.policy-box:checked ~ .checkmark {
-  background: url(../images/checkmark.svg);
-  background-origin: content-box;
+.policy-box:checked ~ .checkmark::before {
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  background-image: url(../images/checkmark.svg);
+  background-origin: border-box;
   background-size: contain;
 }
 
