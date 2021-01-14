@@ -564,7 +564,7 @@ h1 {
 }
 
 .footer-left {
-  width: 100%;
+  width: auto;
   margin-right: 70px;
 }
 
@@ -586,6 +586,7 @@ address {
 .physical-address {
   color: var(--general-background-color);
   margin: 0;
+  white-space: nowrap;
 }
 
 footer p,
