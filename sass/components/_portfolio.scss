@@ -43,7 +43,7 @@
 
     font-family: inherit;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: $semi;
     line-height: 1.63;
     letter-spacing: 0.03em;
     text-align: center;
@@ -66,7 +66,7 @@
 
   &__project {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $bold;
     line-height: 2;
     letter-spacing: 0.06em;
     text-transform: initial;
@@ -106,7 +106,7 @@
     transition-duration: 250ms;
     transition-timing-function: linear;
 
-    font-weight: 400;
+    font-weight: $normal;
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.03em;
@@ -131,7 +131,7 @@
 
   &__category {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: $normal;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: $secondary-text-color;

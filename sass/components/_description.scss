@@ -39,7 +39,7 @@
     color: $primary-text-color;
 
     font-size: 14px;
-    font-weight: 700;
+    font-weight: $bold;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -51,7 +51,7 @@
     color: $secondary-text-color;
 
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
   }

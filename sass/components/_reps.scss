@@ -5,7 +5,7 @@
 .reps {
   &__person {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: $semi;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-transform: initial;
@@ -17,7 +17,7 @@
     color: $primary-text-color;
 
     font-size: 36px;
-    font-weight: 700;
+    font-weight: $bold;
     line-height: 1.17;
     letter-spacing: 0.03em;
 
@@ -99,7 +99,7 @@
     @include centeredFlex();
 
     font-size: 16px;
-    font-weight: 400;
+    font-weight: $normal;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: $secondary-text-color;

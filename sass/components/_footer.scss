@@ -1,6 +1,6 @@
 .footer {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -18,12 +18,7 @@
   }
 
   &__logo {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
-    display: block;
+    @extend %logo;
     margin-bottom: 20px;
   }
 
@@ -73,7 +68,7 @@
     margin: 0 0 20px;
 
     color: $general-background-color;
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 14px;
     line-height: 1.25;
     letter-spacing: 0.03em;
@@ -141,7 +136,7 @@
     color: rgba(255, 255, 255, 0.6);
     outline: none;
 
-    font-weight: 400;
+    font-weight: $normal;
     font-size: 16px;
     line-height: 1.25px;
   }
@@ -164,7 +159,7 @@
     border-style: none;
 
     text-align: center;
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
