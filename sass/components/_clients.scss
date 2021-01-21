@@ -4,6 +4,10 @@
 }
 
 .clients {
+  &__container {
+    @extend %container;
+  }
+
   &__heading {
     color: $primary-text-color;
 

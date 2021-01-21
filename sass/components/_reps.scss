@@ -3,6 +3,10 @@
 }
 
 .reps {
+  &__container {
+    @extend %container;
+  }
+
   &__person {
     font-size: 16px;
     font-weight: $semi;

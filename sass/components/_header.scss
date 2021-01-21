@@ -3,6 +3,10 @@
 }
 
 .header {
+  &__container {
+    @extend %container;
+  }
+
   &__area {
     display: flex;
     justify-content: space-between;

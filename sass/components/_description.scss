@@ -5,6 +5,10 @@
 }
 
 .description {
+  &__container {
+    @extend %container;
+  }
+
   &__header {
     @extend %visually-hidden;
   }

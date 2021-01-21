@@ -5,6 +5,10 @@
 }
 
 .expertise {
+  &__container {
+    @extend %container;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;

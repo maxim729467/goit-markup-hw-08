@@ -17,6 +17,10 @@
 }
 
 .hero {
+  &__container {
+    @extend %container;
+  }
+
   &__content {
     margin-left: auto;
     margin-right: auto;
