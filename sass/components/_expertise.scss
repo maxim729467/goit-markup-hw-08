@@ -1,0 +1,55 @@
+.expertise {
+  padding-top: 0px;
+  padding-bottom: 94px;
+  background-color: $general-background-color;
+}
+
+.expertise {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__heading {
+    color: $primary-text-color;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__img:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__img {
+    position: relative;
+  }
+
+  &__frame {
+    @include centeredFlex();
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    width: 100%;
+    min-height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__thumb {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $general-background-color;
+
+    text-transform: uppercase;
+  }
+}

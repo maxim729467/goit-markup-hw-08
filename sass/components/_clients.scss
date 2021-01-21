@@ -1,0 +1,56 @@
+.clients {
+  padding: 94px 0;
+  background-color: $general-background-color;
+}
+
+.clients {
+  &__heading {
+    color: $primary-text-color;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__logo:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    @include centeredFlex();
+
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid $fill-color;
+    border-radius: 4px;
+    background-color: $general-background-color;
+    color: $accent-color;
+
+    @include animated(border);
+  }
+
+  &__icon {
+    fill: $fill-color;
+    @include animated(fill);
+  }
+
+  &__link:hover .clients__icon,
+  &__link:focus .clients__icon {
+    fill: currentColor;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}

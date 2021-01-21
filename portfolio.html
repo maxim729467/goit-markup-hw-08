@@ -9,17 +9,13 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
 
     <header class="header">
-      <div class="container header--flex">
+      <div class="container header__area">
         <nav class="header__nav">
           <a href="./index.html" class="header__logo"
             ><span class="header__logo--left">Web</span
@@ -28,26 +24,23 @@
 
           <ul class="header__list">
             <li class="header__page">
-              <a href="./index.html" class="header__link link">Студия</a>
+              <a href="./index.html" class="header__link">Студия</a>
             </li>
             <li class="header__page">
               <a
                 href="./portfolio.html"
-                class="header__link header__link--current link"
+                class="header__link header__link--current"
                 >Портфолио</a
               >
             </li>
             <li class="header__page">
-              <a href="" class="header__link link">Контакты</a>
+              <a href="" class="header__link">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="header__list">
           <li class="header__contacts">
-            <a
-              href="mailto:info@devstudio.com"
-              class="header__contact-link link"
-            >
+            <a href="mailto:info@devstudio.com" class="header__contact-link">
               <svg
                 class="header__icon header__icon--fill"
                 width="16"
@@ -59,7 +52,7 @@
             </a>
           </li>
           <li class="header__contacts">
-            <a href="tel:+380961111111" class="header__contact-link link">
+            <a href="tel:+380961111111" class="header__contact-link">
               <svg
                 class="header__icon header__icon--fill"
                 width="10"
@@ -79,23 +72,23 @@
 
       <section class="portfolio">
         <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
+          <h1 class="portfolio__header">Портфолио</h1>
           <ul class="portfolio__button-set">
-            <li>
+            <li class="portfolio__button-element">
               <button type="button" class="portfolio__button">Все</button>
             </li>
-            <li>
+            <li class="portfolio__button-element">
               <button type="button" class="portfolio__button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="portfolio__button-element">
               <button type="button" class="portfolio__button">
                 Приложения
               </button>
             </li>
-            <li>
+            <li class="portfolio__button-element">
               <button type="button" class="portfolio__button">Дизайн</button>
             </li>
-            <li>
+            <li class="portfolio__button-element">
               <button type="button" class="portfolio__button">Маркетинг</button>
             </li>
           </ul>
@@ -300,17 +293,17 @@
               ><span class="footer__logo--right">Studio</span></a
             >
           </div>
-          <address>
-            <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="footer__address">
+            <p class="footer__address-text">г. Киев, пр-т Леси Украинки, 26</p>
           </address>
           <ul>
             <li class="footer__contacts">
-              <a href="mailto:info@example.com" class="link footer__link"
+              <a href="mailto:info@example.com" class="footer__link"
                 >info@example.com
               </a>
             </li>
             <li class="footer__contacts">
-              <a href="tel:380991111111" class="link footer__link"
+              <a href="tel:380991111111" class="footer__link"
                 >+38 099 111 11 11</a
               >
             </li>
@@ -363,7 +356,7 @@
               placeholder="E-mail"
             />
             <button class="footer__button" type="submit">
-              <span>Подписаться</span>
+              <span class="footer__button-name">Подписаться</span>
               <svg width="24" height="24">
                 <use
                   href="./images/sprite-optimized.svg#subscription-icon"

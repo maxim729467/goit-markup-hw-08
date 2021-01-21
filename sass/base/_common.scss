@@ -1,0 +1,49 @@
+body {
+  background-color: var(--general-background-color);
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  width: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+img {
+  display: block;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Коррекция ссылок */
+a {
+  text-decoration: none;
+}
+
+/* Коррекция маркированного списка */
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
