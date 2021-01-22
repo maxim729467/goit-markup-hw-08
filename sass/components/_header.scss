@@ -2,122 +2,116 @@
   background-color: $general-background-color;
 }
 
-.header {
-  &__container {
-    @extend %container;
-  }
+.header__area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
 
-  &__area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ececec;
-  }
+.header__nav {
+  display: flex;
+  align-items: center;
+}
 
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
+.header__list,
+.header__contacts {
+  @include centeredFlex();
+}
 
-  &__list,
-  &__contacts {
-    @include centeredFlex();
-  }
+.header__link {
+  @extend %link;
+  padding: 32px 0px;
+  display: block;
+}
 
-  &__link {
-    @extend %link;
-    padding: 32px 0px;
-    display: block;
-  }
+.header__logo {
+  margin-right: 93px;
+}
 
-  &__logo {
-    margin-right: 93px;
-  }
+.header__page:last-child {
+  margin-right: 0;
+}
 
-  &__page:last-child {
-    margin-right: 0;
-  }
+.header__page {
+  margin-right: 50px;
+}
 
-  &__page {
-    margin-right: 50px;
-  }
+.header__contacts:not(:first-child) {
+  margin-left: 30px;
+}
 
-  &__contacts:not(:first-child) {
-    margin-left: 30px;
-  }
+.header__contact-link {
+  @include centeredFlex();
+  @extend %link;
+}
 
-  &__contact-link {
-    @include centeredFlex();
-    @extend %link;
-  }
+.header__icon {
+  margin-right: 10px;
+}
 
-  &__icon {
-    margin-right: 10px;
-  }
+.header__icon--fill {
+  fill: $secondary-text-color;
 
-  &__icon--fill {
-    fill: $secondary-text-color;
+  @include animated(fill);
+}
 
-    @include animated(fill);
-  }
+.header__link,
+.header__contact-link {
+  color: $primary-text-color;
+  font-size: 14px;
+  font-weight: $semi;
+  line-height: 1.37;
+  letter-spacing: 0.02em;
+}
 
-  &__link,
-  &__contact-link {
-    color: $primary-text-color;
-    font-size: 14px;
-    font-weight: $semi;
-    line-height: 1.37;
-    letter-spacing: 0.02em;
-  }
+.header__contact-link {
+  color: $secondary-text-color;
+  padding: 32px 0px;
+}
 
-  &__contact-link {
-    color: $secondary-text-color;
-    padding: 32px 0px;
-  }
+.header__link--current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
 
-  &__link--current::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 
-    position: absolute;
-    left: 0;
-    bottom: -1px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
 
-    background-color: $accent-color;
-    border-radius: 2px;
-  }
+.header__logo {
+  @extend %logo;
+}
 
-  &__logo {
-    @extend %logo;
-  }
+.header__logo:focus,
+.header__logo:hover {
+  outline-color: $accent-color;
+}
 
-  &__logo:focus,
-  &__logo:hover {
-    outline-color: $accent-color;
-  }
+.header__logo--left {
+  color: $accent-color;
+}
 
-  &__logo--left {
-    color: $accent-color;
-  }
+.header__logo--right {
+  color: $primary-text-color;
+}
 
-  &__logo--right {
-    color: $primary-text-color;
-  }
+.header__contact-link:hover .header__icon--fill,
+.header__contact-link:focus .header__icon--fill {
+  fill: $accent-color;
+  outline: none;
+}
 
-  &__contact-link:hover &__icon--fill,
-  &__contact-link:focus &__icon--fill {
-    fill: $accent-color;
-    outline: none;
-  }
+.header__link {
+  display: inline-block;
+}
 
-  &__link {
-    display: inline-block;
-  }
-
-  &__link--current {
-    color: $accent-color;
-    position: relative;
-  }
+.header__link--current {
+  color: $accent-color;
+  position: relative;
 }

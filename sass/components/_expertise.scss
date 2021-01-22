@@ -4,56 +4,50 @@
   background-color: $general-background-color;
 }
 
-.expertise {
-  &__container {
-    @extend %container;
-  }
+.expertise__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.expertise__heading {
+  color: $primary-text-color;
 
-  &__heading {
-    color: $primary-text-color;
+  font-size: 36px;
+  font-weight: $bold;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 
-    font-size: 36px;
-    font-weight: $bold;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
 
-    margin-bottom: 50px;
-    text-align: center;
-  }
+.expertise__img:not(:last-child) {
+  margin-right: 30px;
+}
 
-  &__img:not(:last-child) {
-    margin-right: 30px;
-  }
+.expertise__img {
+  position: relative;
+}
 
-  &__img {
-    position: relative;
-  }
+.expertise__frame {
+  @include centeredFlex();
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 
-  &__frame {
-    @include centeredFlex();
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+  width: 100%;
+  min-height: 70px;
 
-    width: 100%;
-    min-height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
 
-    background-color: rgba(47, 48, 58, 0.8);
-  }
+.expertise__thumb {
+  font-weight: $bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $general-background-color;
 
-  &__thumb {
-    font-weight: $bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: $general-background-color;
-
-    text-transform: uppercase;
-  }
+  text-transform: uppercase;
 }

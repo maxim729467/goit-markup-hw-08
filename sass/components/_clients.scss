@@ -3,58 +3,56 @@
   background-color: $general-background-color;
 }
 
-.clients {
-  &__container {
-    @extend %container;
-  }
+.clients__heading {
+  color: $primary-text-color;
 
-  &__heading {
-    color: $primary-text-color;
+  font-size: 36px;
+  font-weight: $bold;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 
-    font-size: 36px;
-    font-weight: $bold;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
+}
 
-    margin-bottom: 50px;
-    text-align: center;
-  }
+.clients__logo {
+  width: 170px;
+  height: 90px;
+}
 
-  &__logo:not(:last-child) {
-    margin-right: 30px;
-  }
+.clients__logo:not(:last-child) {
+  margin-right: 30px;
+}
 
-  &__list {
-    display: flex;
-  }
+.clients__list {
+  display: flex;
+}
 
-  &__link {
-    @include centeredFlex();
+.clients__link {
+  @include centeredFlex();
+  width: 100%;
+  height: 100%;
 
-    width: 170px;
-    height: 90px;
+  border: 1px solid $fill-color;
+  border-radius: 4px;
+  background-color: $general-background-color;
+  color: $accent-color;
 
-    border: 1px solid $fill-color;
-    border-radius: 4px;
-    background-color: $general-background-color;
-    color: $accent-color;
+  @include animated(border);
+}
 
-    @include animated(border);
-  }
+.clients__icon {
+  fill: $fill-color;
+  @include animated(fill);
+}
 
-  &__icon {
-    fill: $fill-color;
-    @include animated(fill);
-  }
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+  fill: currentColor;
+}
 
-  &__link:hover .clients__icon,
-  &__link:focus .clients__icon {
-    fill: currentColor;
-  }
-
-  &__link:hover,
-  &__link:focus {
-    border: 1px solid $accent-color;
-    outline: none;
-  }
+.clients__link:hover,
+.clients__link:focus {
+  border: 1px solid $accent-color;
+  outline: none;
 }

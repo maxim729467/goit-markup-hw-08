@@ -18,9 +18,11 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-button:hover {
+button {
   cursor: pointer;
 }
 
@@ -40,7 +42,7 @@ ul {
   padding: 0;
 }
 
-%container {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
