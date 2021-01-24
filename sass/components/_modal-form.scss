@@ -1,3 +1,24 @@
+%visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@mixin centeredFlex($flex: flex) {
+  display: $flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Анимация */
+@mixin animated($transition-property) {
+  transition-property: $transition-property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-form {
   display: flex;
   align-items: center;
@@ -105,6 +126,10 @@
   background-size: contain;
 }
 
+.modal-form__policy-box:focus ~ .modal-form__checkmark::before {
+  border: 2px solid $accent-color;
+}
+
 .modal-form__policy {
   font-weight: $normal;
   font-size: 14px;
@@ -112,6 +137,7 @@
   letter-spacing: 0.03em;
   text-decoration: underline;
 
+  outline-color: $accent-color;
   color: $accent-color;
 }
 

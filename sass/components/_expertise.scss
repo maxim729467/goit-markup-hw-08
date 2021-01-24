@@ -1,3 +1,16 @@
+@mixin centeredFlex($flex: flex) {
+  display: $flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Анимация */
+@mixin animated($transition-property) {
+  transition-property: $transition-property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .expertise {
   padding-top: 0px;
   padding-bottom: 94px;

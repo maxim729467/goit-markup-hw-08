@@ -1,3 +1,25 @@
+%visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+@mixin centeredFlex($flex: flex) {
+  display: $flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Анимация */
+@mixin animated($transition-property) {
+  transition-property: $transition-property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .portfolio {
   background-color: $general-background-color;
   margin-left: auto;
@@ -11,19 +33,6 @@
 
 .portfolio__header {
   @extend %visually-hidden;
-}
-
-.portfolio__card {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.portfolio__card:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.portfolio__card:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
 }
 
 .portfolio__button-set {
@@ -60,7 +69,20 @@
 .portfolio__card-set {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.portfolio__card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio__card:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio__card:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
 }
 
 .portfolio__project {
