@@ -15,23 +15,6 @@
   background-color: $secondary-background-color;
 }
 
-.reps .container {
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .reps__person {
   font-size: 16px;
   font-weight: $semi;
@@ -45,58 +28,28 @@
 .reps__heading {
   color: $primary-text-color;
 
-  font-size: 28px;
+  font-size: 36px;
   font-weight: $bold;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
+}
 
-  @media screen and (min-width: 1200px) {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
+.reps__block {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .reps__list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
-  }
-}
-
-.reps__card {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 30px;
-  }
 }
 
 .reps__card:not(:last-child) {
-  @media screen and (min-width: 1200px) {
-    margin-right: 30px;
-  }
-}
-.reps__card:last-child {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 0px;
-  }
-}
-
-.reps__card:nth-child(2n) {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 30px;
-  }
-}
-
-.reps__card:nth-last-child(-n + 2) {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-bottom: 0px;
-  }
+  margin-right: 30px;
 }
 
 .reps__card {

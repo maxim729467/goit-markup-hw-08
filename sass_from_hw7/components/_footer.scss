@@ -35,29 +35,15 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  background-color: $hero-footer-color;
-}
-
-.footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-  }
+  background-color: $hero-footer-color;
 
-  @media screen and (min-width: 768px) {
-    align-items: baseline;
-  }
-
-  @media screen and (min-width: 1199px) {
+  .container {
+    display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    align-items: baseline;
   }
 }
 
@@ -81,23 +67,7 @@
 
 .footer__left-block {
   width: auto;
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 165px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-  }
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
+  margin-right: 70px;
 }
 
 .footer__address {
@@ -138,19 +108,7 @@
 .footer__middle-block {
   display: flex;
   flex-direction: column;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-  }
+  margin-right: 93px;
 }
 
 .footer__social-list {
@@ -191,25 +149,14 @@
 .footer__right-block {
   display: flex;
   flex-direction: column;
-
-  @media screen and (max-width: 1199px) {
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .footer__form {
   display: flex;
-
-  @media screen and (max-width: 1199px) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 .footer__input {
-  width: 450px;
+  width: 358px;
   padding: 15px;
   margin-right: 12px;
 
@@ -223,10 +170,6 @@
   font-weight: $normal;
   font-size: 16px;
   line-height: 1.25px;
-
-  @media screen and (min-width: 1200px) {
-    width: 358px;
-  }
 }
 
 .footer__input::placeholder {
@@ -252,10 +195,6 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: $general-background-color;
-
-  @media screen and (max-width: 1199px) {
-    margin-top: 20px;
-  }
 }
 
 .footer__button-name {

@@ -12,16 +12,9 @@
 }
 
 .expertise {
-  background-color: $general-background-color;
-
-  @media screen and(max-width: 1199px) {
-    display: none;
-  }
-}
-
-.expertise .container {
   padding-top: 0px;
   padding-bottom: 94px;
+  background-color: $general-background-color;
 }
 
 .expertise__list {

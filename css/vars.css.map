@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass_from_hw7/utils/vars.scss"
+    ],
+    "names": [],
+    "file": "vars.css"
+}
