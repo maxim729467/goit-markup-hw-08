@@ -46,14 +46,15 @@
 // MODAL
 .modal {
   position: fixed;
-  top: 50%;
+  top: 20px;
+  bottom: 20px;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0) scale(1);
+  overflow-y: scroll;
 
   padding: 25px;
 
   @media screen and (max-width: 479px) {
-    overflow-y: scroll;
     width: 320px;
   }
 
