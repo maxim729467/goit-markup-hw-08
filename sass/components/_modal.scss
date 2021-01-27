@@ -50,8 +50,21 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  width: 528px;
-  padding: 40px;
+  padding: 25px;
+
+  @media screen and (max-width: 479px) {
+    overflow-y: scroll;
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 
   background-color: $general-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -95,10 +108,14 @@
 .modal__paragraph {
   font-weight: $bold;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: $primary-text-color;
 
   margin: 0px 0px 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }

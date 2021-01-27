@@ -89,11 +89,16 @@
 
 .modal-form__agreement {
   font-weight: $normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
   color: $secondary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__check-label {
@@ -132,13 +137,18 @@
 
 .modal-form__policy {
   font-weight: $normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
   text-decoration: underline;
 
   outline-color: $accent-color;
   color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__datablock {

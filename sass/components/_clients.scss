@@ -69,15 +69,21 @@
   }
 }
 
+.clients__logo:not(:last-child) {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+  }
+}
+
 // MOBILE GRID
 .clients__logo:nth-child(odd) {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-right: 30px;
   }
 }
 
 .clients__logo:nth-child(-n + 4) {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-bottom: 30px;
   }
 }
