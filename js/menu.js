@@ -6,9 +6,9 @@
   //   const expanded =
   //     menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
-    menuBtnRef.classList.toggle("header__menu--is-open");
+    menuBtnRef.classList.toggle("header__menu--is-hidden");
     // menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-    mobileMenuRef.classList.toggle("header__content--is-open");
+    mobileMenuRef.classList.toggle("header__content--is-hidden");
   });
 })();

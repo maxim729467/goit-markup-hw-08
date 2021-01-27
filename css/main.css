@@ -541,11 +541,11 @@ ul {
   display: none;
 }
 
-.header__menu.header__menu--is-open .header__cross {
+.header__menu.header__menu--is-hidden .header__cross {
   display: none;
 }
 
-.header__menu.header__menu--is-open .header__burger {
+.header__menu.header__menu--is-hidden .header__burger {
   display: block;
 }
 
@@ -587,7 +587,7 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-  .header__content.header__content--is-open {
+  .header__content.header__content--is-hidden {
     opacity: 0;
     -webkit-transform: scale(0.2);
             transform: scale(0.2);
