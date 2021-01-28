@@ -28,6 +28,7 @@
 
 .header__area {
   position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,6 +168,7 @@
 .header__content.header__content--is-hidden {
   @media screen and (max-width: 767px) {
     opacity: 0;
+
     transform: translateY(-100%);
     pointer-events: none;
   }
