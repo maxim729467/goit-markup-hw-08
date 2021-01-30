@@ -168,30 +168,45 @@
           <ul class="expertise__list">
             <li class="expertise__img">
               <img
-                src="./images/img-1.jpg"
                 alt="Печатает на клавиатуре"
+                src="./images/description1-1x.jpg"
+                srcset="
+                  ./images/description1-1x.jpg 1x,
+                  ./images/description1-2x.jpg 2x
+                "
                 width="370"
               />
+
               <div class="expertise__frame">
                 <p class="expertise__thumb">Десктопные приложения</p>
               </div>
             </li>
             <li class="expertise__img">
               <img
-                src="./images/img-2.jpg"
                 alt="Смотрит в смартфон"
+                src="./images/description2-1x.jpg"
+                srcset="
+                  ./images/description2-1x.jpg 1x,
+                  ./images/description2-2x.jpg 2x
+                "
                 width="370"
               />
+
               <div class="expertise__frame">
                 <p class="expertise__thumb">Мобильные приложения</p>
               </div>
             </li>
             <li class="expertise__img">
               <img
-                src="./images/img-3.jpg"
                 alt="Смотрит на картинку на планшете"
+                src="./images/description3-1x.jpg"
+                srcset="
+                  ./images/description3-1x.jpg 1x,
+                  ./images/description3-2x.jpg 2x
+                "
                 width="370"
               />
+
               <div class="expertise__frame">
                 <p class="expertise__thumb">Дизайнерские решения</p>
               </div>
@@ -207,11 +222,33 @@
           <h2 class="reps__heading">Наша команда</h2>
           <ul class="reps__list">
             <li class="reps__card">
-              <img
-                src="./images/product-designer.jpg"
-                alt="Мужчина в очках и коричневой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/rep1-tablet-1x.jpg 1x,
+                    ./images/rep1-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/rep1-desktop-1x.jpg 1x,
+                    ./images/rep1-desktop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/rep1-mobile-1x.jpg 1x,
+                    ./images/rep1-mobile-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/rep1-desktop-1x.jpg"
+                  alt="Мужчина в очках и коричневой рубашке"
+                />
+              </picture>
               <div class="reps__card-block">
                 <h3 class="reps__person">Игорь Демьяненко</h3>
                 <p class="reps__position">Product Designer</p>
@@ -255,11 +292,34 @@
               </div>
             </li>
             <li class="reps__card">
-              <img
-                src="./images/frontend-dev.jpg"
-                alt="Девушка в очках и черном пиджаке"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/rep2-tablet-1x.jpg 1x,
+                    ./images/rep2-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/rep2-desktop-1x.jpg 1x,
+                    ./images/rep2-desktop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/rep2-mobile-1x.jpg 1x,
+                    ./images/rep2-mobile-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/rep2-desktop-1x.jpg"
+                  alt="Девушка в очках и черном пиджаке"
+                />
+              </picture>
+
               <div class="reps__card-block">
                 <h3 class="reps__person">Ольга Репина</h3>
                 <p class="reps__position">Frontend Developer</p>
@@ -302,11 +362,34 @@
               </div>
             </li>
             <li class="reps__card">
-              <img
-                src="./images/marketing.jpg"
-                alt="Мужчина в светлой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/rep3-tablet-1x.jpg 1x,
+                    ./images/rep3-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/rep3-desktop-1x.jpg 1x,
+                    ./images/rep3-desktop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/rep3-mobile-1x.jpg 1x,
+                    ./images/rep3-mobile-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/rep3-desktop-1x.jpg"
+                  alt="Мужчина в светлой рубашке"
+                />
+              </picture>
+
               <div class="reps__card-block">
                 <h3 class="reps__person">Николай Тарасов</h3>
                 <p class="reps__position">Marketing</p>
@@ -349,11 +432,34 @@
               </div>
             </li>
             <li class="reps__card">
-              <img
-                src="./images/ui-design.jpg"
-                alt="Мужчина в очках и черной футболке"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                  srcset="
+                    ./images/rep4-tablet-1x.jpg 1x,
+                    ./images/rep4-tablet-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/rep4-desktop-1x.jpg 1x,
+                    ./images/rep4-desktop-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/rep4-mobile-1x.jpg 1x,
+                    ./images/rep4-mobile-2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/rep4-desktop-1x.jpg"
+                  alt="Мужчина в очках и черной футболке"
+                />
+              </picture>
+
               <div class="reps__card-block">
                 <h3 class="reps__person">Михаил Ермаков</h3>
                 <p class="reps__position">UI Designer</p>
