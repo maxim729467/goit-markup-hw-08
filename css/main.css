@@ -1970,11 +1970,10 @@ ul {
   top: 20px;
   bottom: 20px;
   left: 50%;
-  height: 609px;
+  max-height: 609px;
   padding: 40px;
   -webkit-transform: translate(-50%, 0) scale(1);
           transform: translate(-50%, 0) scale(1);
-  overflow-y: scroll;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1989,12 +1988,14 @@ ul {
 @media screen and (max-width: 479px) {
   .modal {
     max-width: 450px;
+    overflow-y: scroll;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
+    overflow-y: scroll;
   }
 }
 
