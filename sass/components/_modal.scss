@@ -49,25 +49,25 @@
   position: fixed;
   top: 20px;
   bottom: 20px;
-  max-height: 630px;
   left: 50%;
+
+  height: 609px;
+  padding: 40px;
+
   transform: translate(-50%, 0) scale(1);
   overflow-y: scroll;
 
-  padding: 25px;
-
   @media screen and (max-width: 479px) {
-    width: 320px;
+    max-width: 450px;
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
-    padding: 40px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
-    max-height: 581px;
+    height: 581px;
   }
 
   background-color: $general-background-color;
