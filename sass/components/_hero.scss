@@ -98,6 +98,11 @@
   margin-right: auto;
   text-align: center;
 
+  @media screen and (max-width: 767px) {
+    padding-top: 118px;
+    margin-top: 60px;
+  }
+
   @media screen and (max-width: 1199px) {
     max-width: 360px;
     padding-top: 118px;

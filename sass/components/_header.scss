@@ -26,10 +26,45 @@
   background-color: $general-background-color;
 }
 
-.header__area {
-  position: relative;
+// Прячет выплывающее меню под хэдер
+@media screen and (max-width: 767px) {
+  .header .container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    max-width: 480px;
+  }
 
+  .header .container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 100%;
+    height: 100%;
+
+    transform: translateX(-50%);
+    background-color: $general-background-color;
+    z-index: 2;
+  }
+}
+
+.header .container {
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.header__area {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ececec;
@@ -62,10 +97,6 @@
 
 .header__contacts_list {
   @media screen and (min-width: 768px) {
-    @include centeredFlex();
-    flex-direction: column;
-  }
-  @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -89,6 +120,9 @@
 }
 
 .header__logo {
+  position: relative;
+  z-index: 3;
+
   padding-top: 16px;
   padding-bottom: 16px;
   @media screen and (min-width: 768px) {
@@ -100,6 +134,9 @@
 }
 
 .header__menu {
+  position: relative;
+  z-index: 3;
+
   background-color: transparent;
   border: none;
   padding: 0;
