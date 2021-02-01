@@ -141,13 +141,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     z-index: 1;
-    position: absolute;
     opacity: 1;
+    position: absolute;
 
     top: 103%;
     left: 0;
-    transform: scale(1);
 
     max-width: 480px;
     width: 100%;

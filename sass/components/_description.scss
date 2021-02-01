@@ -25,13 +25,6 @@
 }
 
 .description .container {
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   padding-top: 60px;
   padding-bottom: 60px;
 
