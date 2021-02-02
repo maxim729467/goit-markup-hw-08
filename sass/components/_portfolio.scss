@@ -119,6 +119,12 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__card:nth-child(1) .portfolio__caption {
+    height: 146.6px;
+  }
+}
+
 // MOBILE-GRID
 
 .portfolio__card:not(:last-child) {

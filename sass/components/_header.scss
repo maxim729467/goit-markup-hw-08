@@ -186,7 +186,9 @@
   left: 0;
   opacity: 1;
 
-  @include animated(transform);
+  transition-property: transform;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__menu:after {
@@ -200,7 +202,9 @@
   left: 0;
   opacity: 1;
 
-  @include animated(transform);
+  transition-property: transform;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__menu .header__burger_cross {
@@ -213,7 +217,7 @@
   height: 3px;
 
   transition-property: transform;
-  transition-duration: 250ms;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
