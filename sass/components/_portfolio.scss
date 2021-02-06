@@ -198,7 +198,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
 
   transform: translateY(100%);
   transition-property: opacity, transform;
@@ -206,13 +205,28 @@
   transition-timing-function: linear;
 
   font-weight: $normal;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.4;
   letter-spacing: 0.03em;
 
   color: $general-background-color;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+
+  padding: 24px;
+
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio__card-link:hover,
