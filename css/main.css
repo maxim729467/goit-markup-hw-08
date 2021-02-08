@@ -764,6 +764,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .header__link {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__contacts {
     font-weight: 500;
@@ -779,6 +785,17 @@ ul {
   }
   .header__contact-link {
     color: #757575;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header__contacts:last-child {
+    font-size: 24px;
+    line-height: 1.18;
+  }
+  .header__contacts:first-child {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
@@ -2379,7 +2396,12 @@ ul {
 }
 
 .modal-form__datablock {
+  display: block;
   position: relative;
+}
+
+.modal-form__policy-thumb {
+  display: block;
 }
 
 .modal-form__field {

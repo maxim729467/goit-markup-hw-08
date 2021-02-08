@@ -359,6 +359,12 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  .header__link {
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__contacts {
     font-weight: 500;
@@ -377,6 +383,18 @@
 
   .header__contact-link {
     color: $secondary-text-color;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header__contacts:last-child {
+    font-size: 24px;
+    line-height: 1.18;
+  }
+
+  .header__contacts:first-child {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
